@@ -11,7 +11,7 @@ LeetCode::LCArray::LCArray()
 LeetCode::LCArray::LCArray(std::string strInput)
 {
 	if (!_ConstructArray(strInput)) {
-		std::cerr << "LCArray: contruct error." << std::endl;
+		std::cerr << "LCArray: contructed error." << std::endl;
 	}
 }
 
@@ -19,7 +19,7 @@ LeetCode::LCArray::LCArray(const char* strInput)
 {
 	if (nullptr != strInput) {
 		if (!_ConstructArray(std::string(strInput))) {
-			std::cerr << "LCArray: contruct error." << std::endl;
+			std::cerr << "LCArray: contructed error." << std::endl;
 		}
 	}
 }
@@ -38,8 +38,9 @@ std::vector<int> LeetCode::LCArray::GetArray()
 // 打印：数组内容
 void LeetCode::LCArray::PrintArray()
 {
+	if (m_vecArray.size() == 0) return;
 	std::cout << "LCArray: [ ";
-	for (size_t i = 0; i < m_vecArray.size() - 1; ++i)
+	for (int i = 0; i < m_vecArray.size() - 1; ++i)
 		std::cout << m_vecArray[i] << ", ";
 	if (m_vecArray.size() != 0)
 		std::cout << m_vecArray[m_vecArray.size() - 1] << " ]" << std::endl;
