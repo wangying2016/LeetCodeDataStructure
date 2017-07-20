@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\LCArray.h" />
+    <ClInclude Include="include\LCBinaryTree.h" />
     <ClInclude Include="include\LeetCodeDataStructure.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\LCArray.cpp" />
+    <ClCompile Include="source\LCBinaryTree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

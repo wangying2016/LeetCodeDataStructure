@@ -1,12 +1,7 @@
 #include <iostream>
-#include <regex>
 #include <cstdlib>
+#include <regex>
 #include "../include/LCArray.h"
-
-LeetCode::LCArray::LCArray()
-{
-
-}
 
 LeetCode::LCArray::LCArray(std::string strInput)
 {
@@ -30,13 +25,13 @@ LeetCode::LCArray::~LCArray()
 }
 
 // 获取：std::vector<int> 类型的数组
-std::vector<int> LeetCode::LCArray::GetArray()
+std::vector<int> LeetCode::LCArray::GetArray() const
 {
 	return m_vecArray;
 }
 
 // 打印：数组内容
-void LeetCode::LCArray::PrintArray()
+void LeetCode::LCArray::PrintArray() const
 {
 	if (m_vecArray.size() == 0) return;
 	std::cout << "LCArray: [ ";
