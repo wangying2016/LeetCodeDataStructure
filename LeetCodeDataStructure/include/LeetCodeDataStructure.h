@@ -17,11 +17,10 @@
 namespace LeetCode {
 	// 结构定义
 	class LEETCODE_EXP LCArray;				// 数组
-	class LEETCODE_EXP LCString;			// 字符串
 	class LEETCODE_EXP LCSingleLinkedList;	// 单链表
 	class LEETCODE_EXP LCBinaryTree;		// 二叉树
 
-	// 叶子节点
+	// 二叉树叶子节点
 	struct TreeNode {
 		int val;
 		TreeNode *left;
@@ -29,6 +28,15 @@ namespace LeetCode {
 		TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 		TreeNode() = default;
 	};
+
+	// 单链表节点
+	struct ListNode {
+		int val;
+		ListNode *next;
+		ListNode(int x) : val(x), next(nullptr) {}
+		ListNode() = default;
+	};
+	
 }
 
 #endif

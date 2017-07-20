@@ -44,7 +44,7 @@ void LeetCode::LCArray::PrintArray() const
 // 构造：将字符串输入转化为 std::vector<int> 内置类型
 // 正则：\[.*\[|\].*\]  [[ 和 ]]
 // 正则：\[(\s*\d\s*[,]\s*)*\s*\d\s*\] 匹配 [1, 2, 3, 4, 5, 6]
-// 正则：
+// 正则：\d 匹配 1
 bool LeetCode::LCArray::_ConstructArray(std::string strInput)
 {
 	std::string strTemp(strInput);

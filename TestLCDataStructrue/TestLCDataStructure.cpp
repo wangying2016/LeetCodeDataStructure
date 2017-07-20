@@ -3,6 +3,7 @@
 #include "LeetCodeDataStructure.h"
 #include "LCArray.h"
 #include "LCBinaryTree.h"
+#include "LCSingleLinkedList.h"
 
 int main()
 {
@@ -20,7 +21,7 @@ int main()
 	}
 #endif
 
-#if 1
+#if 0
 	// Test LCBinaryTree
 	/*std::string strInput = "[1, 2, 3, null, 4, null, 5]";
 	LeetCode::LCBinaryTree lcBinaryTree(strInput);
@@ -31,6 +32,19 @@ int main()
 		LCBinaryTree.PrintBinaryTree();
 	}
 #endif 
+
+#if 1
+	// Test LCSingleLinkedList
+	/*std::string strInput = "[1, 2, 3 ,4, 5]";
+	LeetCode::LCSingleLinkedList lcSingleLinkedList(strInput);
+	lcSingleLinkedList.PrintSingleLinkedList();*/
+	std::string strInput;
+	while (std::getline(std::cin, strInput)) {
+		LeetCode::LCSingleLinkedList lcSingleLinkedList(strInput);
+		lcSingleLinkedList.PrintSingleLinkedList();
+	}
+#endif
+
 	system("pause");
 	return 0;
 }
