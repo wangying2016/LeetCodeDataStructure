@@ -21,11 +21,13 @@ int main()
 	}
 #endif
 
-#if 0
+#if 1
 	// Test LCBinaryTree
 	/*std::string strInput = "[1, 2, 3, null, 4, null, 5]";
 	LeetCode::LCBinaryTree lcBinaryTree(strInput);
 	lcBinaryTree.PrintBinaryTree();*/
+	std::cout << "This my LeetCode::LCBinaryTree class \r\n" <<
+		"In order to deal with binary tree structure" << std::endl;
 	std::string strInput;
 	while (std::getline(std::cin, strInput)) {
 		LeetCode::LCBinaryTree LCBinaryTree(strInput);
@@ -33,11 +35,13 @@ int main()
 	}
 #endif 
 
-#if 1
+#if 0
 	// Test LCSingleLinkedList
 	/*std::string strInput = "[1, 2, 3 ,4, 5]";
 	LeetCode::LCSingleLinkedList lcSingleLinkedList(strInput);
 	lcSingleLinkedList.PrintSingleLinkedList();*/
+	std::cout << "This my LeetCode::LCSingleLinkedList class \r\n" <<
+		"In order to deal with single linked list structure" << std::endl;
 	std::string strInput;
 	while (std::getline(std::cin, strInput)) {
 		LeetCode::LCSingleLinkedList lcSingleLinkedList(strInput);
